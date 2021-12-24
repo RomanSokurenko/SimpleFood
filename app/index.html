@@ -1,13 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SimpleFood</title>
+    <title>ФРЕШОК онлайн-маркет</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__inner-list">
+            <a class="header__inner-link" href="#">
+              <img
+                src="images/address.png"
+                alt="адрес и время доставки"
+                class="logo__img"
+              />
+            </a>
+            <a class="header__inner-link" href="#">
+              <img
+                src="images/tel.png"
+                alt="горячая линия 24/7"
+                class="header__logo"
+              />
+            </a>
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">ДОСТАВКА</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">О НАС</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">НОВОСТИ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <ul class="user">
+      <div class="container">
+        <div class="user__inner">
+          <a href="#" class="user__inner-logo"
+            ><img class="logo__img" src="images/logo.png" alt="логотип ФРЕШОК"
+          /></a>
+
+          <div class="user__catalog">
+            <a class="user__catalog-link" href="#">
+              <img
+                class="user__catalog-img"
+                src="images/nav_icon.png"
+                alt="кнопка меню"
+              />
+              <span class="user__catalog-text">Каталог продуктов</span>
+            </a>
+          </div>
+
+          <form class="user__form">
+            <!-- <label class="user__form-label"> -->
+            <textarea
+              class="user__form-textarea"
+              name="message"
+              placeholder="Найти в магазине ..."
+              required=""
+            ></textarea>
+            <!-- </label> -->
+            <button class="btn-textarea" type="submit">ПОИСК</button>
+          </form>
+
+          <div class="user__nav">
+            <a class="user__nav-link" href="#">
+              <img
+                class="user__nav-icon"
+                src="images/user-link.png"
+                alt="пользователь" /></a
+            ><a class="user__nav-link" href="#">
+              <span class="user__nav-numb">12</span>
+              <img
+                class="user__nav-icon"
+                src="images/icon-heart.png"
+                alt="пользователь" /></a
+            ><a class="user__nav-link" href="#">
+              <span class="user__nav-numb">12</span>
+              <img
+                class="user__nav-icon"
+                src="images/icon-cart.png"
+                alt="пользователь"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </ul>
+    <!-- <div class="user__inner">
+          <a class="user__inner-logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="логотип ФРЕШОК" />
+          </a>
+          <nav class="user__nav">
+            <ul class="user__menu">
+              <li class="user__menu-catalog">
+                <a class="user__menu-link" href="#">
+                  <img
+                    class="user__menu-img"
+                    src="images/nav_icon.png"
+                    alt="кнопка меню"
+                  />
+                  <span class="user__menu-text">Каталог продуктов</span>
+                </a>
+              </li>
+              <li class="user__menu">
+                <label class="user__menu-form">
+                  <textarea
+                    class="user__menu-textarea"
+                    name="message"
+                    placeholder="Найти в магазине ..."
+                    required=""
+                  ></textarea>
+                </label>
+                <button class="btn-textarea" type="submit">ПОИСК</button>
+              </li>
+              <li class="user__menu-list">
+                <a class="user__nav-link" href="#"
+                  ><img
+                    src="images/user-link.png"
+                    alt="пользователь"
+                    class="user__nav-icon"
+                  />
+                </a>
+              </li>
+              <li class="user__menu-list">
+                <a class="user__nav-link" href="#"
+                  ><img
+                    src="images/icon-heart.png"
+                    alt="пользователь"
+                    class="user__nav-icon"
+                  />
+                  <div class="user__nav-numb">12</div>
+                </a>
+              </li>
+              <li class="user__menu-list">
+                <a class="user__nav-link" href="#"
+                  ><img
+                    src="images/icon-cart.png"
+                    alt="пользователь"
+                    class="user__nav-icon"
+                  />
+                  <div class="user__nav-numb">13</div>
+                </a>
+              </li>
+            </ul>
+          </nav> -->
+
     <script src="js/main.min.js"></script>
   </body>
 </html>
