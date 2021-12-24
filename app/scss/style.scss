@@ -6,7 +6,7 @@
 
 .header {
   background-color: #31352b;
-  padding: 13px 0;
+  padding-top: 17px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -37,6 +37,7 @@
 .user {
   background-color: #63a60f;
   padding: 25px 0;
+  margin-top: 15px;
 
   &__inner {
     display: flex;
