@@ -319,7 +319,6 @@
 }
 
 .products {
-  background-color: tomato;
   text-align: center;
   padding-top: 72px;
   padding-bottom: 52px;
@@ -334,6 +333,7 @@
   &__filter {
     display: flex;
     justify-content: center;
+    margin-bottom: 48px;
   }
 
   &__item + .products__item {
@@ -348,9 +348,118 @@
     color: #505050;
   }
 
-  &__content {
-    max-width: 300px;
-    background-color: turquoise;
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  max-width: 300px;
+  max-height: 409px;
+  padding-top: 12px;
+  padding-bottom: 18px;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  border-radius: 6px;
+  margin-bottom: 30px;
+
+  &__title {
+    @extend %openSans-700;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    color: #fff;
+    padding: 3px 6px;
+    background-color: #63a60e;
+    max-width: 66px;
+    border-radius: 6px;
+    margin-left: 12px;
+    margin-bottom: 6px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    @extend %openSans-700;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    color: #fff;
+    padding: 3px 6px;
+    background-color: #cf3e3b;
+    border-radius: 6px;
+    max-width: 37px;
+    margin-left: 12px;
+  }
+
+  &__btn {
+    position: relative;
+    right: 0;
+    top: -17px;
+  }
+  &__hero {
+    text-align: left;
+  }
+
+  &__hero-img {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+
+  &__hero-text {
+    @extend %openSans-600;
+    font-size: 14px;
+    line-height: 140%;
+    margin-left: 12px;
+    max-width: 250px;
+    // margin-bottom: 50px;
+  }
+
+  &__price {
+    // text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // position: relative;
+    // top: 0;
+    // left: 0;
+  }
+
+  &__price-list {
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  &__price-discont {
+    @extend %openSans-400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #c1c1c1;
+    margin-bottom: 3px;
+    position: relative;
+  }
+  // &__price-discont::before {
+  //   content: "";
+  //   border-bottom: 1px solid #c1c1c1;
+  //   transform: rotate(-14.99deg);
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 50%;
+  // }
+
+  &__price-text {
+    font-size: 14px;
+    line-height: 100%;
+    color: #505050;
+  }
+
+  &__price-btn {
+    margin-right: 18px;
   }
 }
 
