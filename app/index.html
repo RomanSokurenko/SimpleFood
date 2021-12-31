@@ -210,24 +210,50 @@
 
           <ul class="products__filter">
             <li class="products__item">
-              <button class="products__btn" type="button">Все товары</button>
+              <button class="products__btn" type="button" data-filter="all">
+                Все товары
+              </button>
             </li>
             <li class="products__item">
-              <button class="products__btn" type="button">Фрукты</button>
+              <button
+                class="products__btn"
+                type="button"
+                data-filter=".category-1"
+              >
+                Фрукты
+              </button>
             </li>
             <li class="products__item">
-              <button class="products__btn" type="button">ОВОЩИ</button>
+              <button
+                class="products__btn"
+                type="button"
+                data-filter=".category-2"
+              >
+                ОВОЩИ
+              </button>
             </li>
             <li class="products__item">
-              <button class="products__btn" type="button">Напитки</button>
+              <button
+                class="products__btn"
+                type="button"
+                data-filter=".category-3"
+              >
+                Напитки
+              </button>
             </li>
             <li class="products__item">
-              <button class="products__btn" type="button">БАКАЛЕЯ</button>
+              <button
+                class="products__btn"
+                type="button"
+                data-filter=".category-4"
+              >
+                БАКАЛЕЯ
+              </button>
             </li>
           </ul>
 
           <ul class="products__card">
-            <li class="card">
+            <li class="card mix category-1">
               <h3 class="card__title">НОВИНКА</h3>
               <div class="card__top">
                 <p class="card__text">-50%</p>
@@ -238,22 +264,22 @@
 
               <div class="card__hero">
                 <img src="images/pineapple.jpg" alt="" class="card__hero-img" />
-                <p class="card__hero-text">Ананас, 1кг</p>
-              </div>
+                <p class="card__hero-text">Лимон, 1кг</p>
 
-              <div class="card__price">
-                <div class="card__price-list">
-                  <p class="card__price-discont">1999 ₽</p>
-                  <p class="card__price-text">999 ₽</p>
+                <div class="card__price">
+                  <div class="card__price-list">
+                    <p class="card__price-discont">1999 ₽</p>
+                    <p class="card__price-text">999 ₽</p>
+                  </div>
+
+                  <button class="card__price-btn">
+                    <img src="images/cart-btn.svg" alt="корзина" />
+                  </button>
                 </div>
-
-                <button class="card__price-btn">
-                  <img src="images/cart-btn.svg" alt="корзина" />
-                </button>
               </div>
             </li>
 
-            <li class="card">
+            <li class="card mix category-1">
               <h3 class="card__title" style="opacity: 0">НОВИНКА</h3>
               <div class="card__top">
                 <p class="card__text" style="opacity: 0">-50%</p>
@@ -265,22 +291,22 @@
               <div class="card__hero">
                 <img src="images/lemon.jpg" alt="" class="card__hero-img" />
                 <p class="card__hero-text">Лимон, 1кг</p>
-              </div>
 
-              <div class="card__price">
-                <div class="card__price-list">
-                  <p class="card__price-discont" style="opacity: 0">1999 ₽</p>
-                  <p class="card__price-text">199 ₽</p>
+                <div class="card__price">
+                  <div class="card__price-list">
+                    <p class="card__price-discont" style="opacity: 0">1999 ₽</p>
+                    <p class="card__price-text">199 ₽</p>
+                  </div>
+
+                  <button class="card__price-btn">
+                    <img src="images/cart-btn.svg" alt="корзина" />
+                  </button>
                 </div>
-
-                <button class="card__price-btn">
-                  <img src="images/cart-btn.svg" alt="корзина" />
-                </button>
               </div>
             </li>
 
-            <li class="card">
-              <h3 class="card__title">НОВИНКА</h3>
+            <li class="card mix category-1">
+              <h3 class="card__title">ХИТ</h3>
               <div class="card__top">
                 <p class="card__text" style="opacity: 0">-50%</p>
                 <button class="card__btn">
@@ -291,7 +317,7 @@
               <div class="card__hero">
                 <img src="images/pitahaya.jpg" alt="" class="card__hero-img" />
                 <p class="card__hero-text">
-                  Питахайя красная с белой мякотью, lor 1шт
+                  Питахайя красная с белой мякотью, 1шт
                 </p>
               </div>
 
@@ -307,7 +333,7 @@
               </div>
             </li>
 
-            <li class="card">
+            <li class="card mix category-4">
               <h3 class="card__title" style="opacity: 0">НОВИНКА</h3>
               <div class="card__top">
                 <p class="card__text" style="opacity: 0">-50%</p>
@@ -335,7 +361,7 @@
               </div>
             </li>
 
-            <li class="card">
+            <li class="card mix category-2">
               <h3 class="card__title">НОВИНКА</h3>
               <div class="card__top">
                 <p class="card__text" style="opacity: 0">-50%</p>
@@ -363,7 +389,7 @@
               </div>
             </li>
 
-            <li class="card">
+            <li class="card mix category-3">
               <h3 class="card__title" style="opacity: 0">НОВИНКА</h3>
               <div class="card__top">
                 <p class="card__text" style="opacity: 0">-50%</p>
@@ -392,7 +418,7 @@
               </div>
             </li>
 
-            <li class="card">
+            <li class="card mix category-3">
               <h3 class="card__title">НОВИНКА</h3>
               <div class="card__top">
                 <p class="card__text" style="opacity: 0">-50%</p>
@@ -420,7 +446,7 @@
               </div>
             </li>
 
-            <li class="card">
+            <li class="card mix category-2">
               <h3 class="card__title">НОВИНКА</h3>
               <div class="card__top">
                 <p class="card__text" style="opacity: 0">-50%</p>
@@ -446,6 +472,7 @@
               </div>
             </li>
           </ul>
+          <button class="card__btn" type="button">Показать еще</button>
         </div>
       </section>
     </main>
@@ -566,5 +593,6 @@
     </footer>
 
     <script src="js/main.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
   </body>
 </html>

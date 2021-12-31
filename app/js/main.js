@@ -5,4 +5,6 @@ $(function () {
     nextArrow:
       '<button class="slick-btn slick-next"><img src="./images/icon-arrow-right.png" alt="next"></button>',
   });
+
+  var mixer = mixitup(".products__card");
 });
